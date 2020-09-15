@@ -16,6 +16,7 @@ To understand the data structure of timeBuzzer, we take a look at the Desktop Ap
 ![Image of Desktop App](timeBuzzer-datastructure-desktop-app.png)
 
 
+
 ### Tiles
 Tiles are objects like “Project A”, “Customer B”, “Cost center C” or similar.
 
@@ -36,6 +37,8 @@ Technically, the order of the Layers is defined by child/parent-relations betwee
 The Layers are organized in a Template. Each user is related to one Template. So, the Template defines the Layers that are shown to the user.
 
 In most cases, a company needs only one Template for all users of the company. Example: a company wants to track the working time on projects and tasks, you define a Template with 2 Layers and name the first Layer “Projects” and the second Layer “Tasks”. Every user is related to this Template.
+
+![Image of data model](timeBuzzer_datastructure_model.png)
 
 
 ### Dependencies between Tiles
