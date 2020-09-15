@@ -9,10 +9,11 @@ The timeBuzzer website: https://timebuzzer.com
 
 
 
-
 ## Data Model
 
 To understand the data structure of timeBuzzer, we take a look at the Desktop App. You navigate from top to bottom to choose your projects, customers, cost center, tasks etc. you want to track your time on.
+
+![Image of Desktop App](https://github.com/timeBuzzer/timebuzzer-open-api-doc/img/timeBuzzer-datastructure-desktop-app.png)
 
 
 ### Tiles
