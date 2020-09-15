@@ -4,16 +4,52 @@ Welcome to the timeBuzzer API Documentation. The timeBuzzer API is a REST API. Y
 
 Here you find the list of all API requests: https://my.timebuzzer.com/doc
 
-Versioning principle
+The timeBuzzer website: https://timebuzzer.com
+
+
+## Versioning principle
 
 We follow the semantic versioning principle:
 
-    major.minor.patch
+major.minor.patch
 
-    Small bugfixes increase the patchlevel
-    Compatible updates increase the minor level
-    Breaking changes increase the major level
+- Small bugfixes increase the patchlevel
+- Compatible updates increase the minor level
+- Breaking changes increase the major level
 
 
+## Data Model
 
-The timeBuzzer website: https://timebuzzer.com
+To understand the data structure of timeBuzzer, we take a look at the Desktop App. You navigate from top to bottom to choose your projects, customers, cost center, tasks etc. you want to track your time on.
+
+
+### Tiles
+Tiles are objects like “Project A”, “Customer B”, “Cost center C” or similar.
+
+### Layers
+Tiles are organized in Layers. For instance, all customer tiles are related to the same Layer called “Customer”. You can create 1, 2 or 3 Layers and give the Layers a name. This allows you to fit timeBuzzer for the individual needs of a company.
+
+Examples:
+
+1) Some companies track their time on projects only. In this case you need just 1 Layer and name it “Projects”.
+2) Other companies track their time on projects and cost centers. You define 2 Layers, name the first “Projects” and the second “Cost Centers”.
+3) Some companies track their time on Projects, Sub-Projects and Tasks. (You define 3 Layers and name them…)
+
+Technically, the order of the Layers is defined by child/parent-relations between Layers.
+
+
+### Templates
+The Layers are organized in a Template. Each user is related to one Template. So, the Template defines the Layers that are shown to the user.
+
+In most cases, a company needs only one Template for all users of the company. Example: a company wants to track the working time on projects and tasks, you define a Template with 2 Layers and name the first Layer “Projects” and the second Layer “Tasks”. Every user is related to this Template.
+
+
+### Dependencies between Tiles
+In practice there are different needs, how relations between Tiles like projects, tasks or customers should be. For this, Tiles can be a child of Tile(s) in the upper Layer, and also be a parent to Tile(s) in the lower Layer.
+
+A Tile can also be “global”, what means the Tile will be handled like it would be a child to every Tile in the upper Layer (also to Tiles you will add to the upper Layer in the future). A global is defined by
+
+“type”: 2,
+
+Child/Parent–relationships allows you, to combine this Use cases. For instance, you can create Cost-Centers-Tiles that are global and so available to all Project-Tiles, but you can add some Cost-Center-Tiles that are only related to some specific Project-Tiles.
+
