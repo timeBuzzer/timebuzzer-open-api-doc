@@ -7,15 +7,6 @@ Here you find the list of all API requests: https://my.timebuzzer.com/doc
 The timeBuzzer website: https://timebuzzer.com
 
 
-## Versioning principle
-
-We follow the semantic versioning principle:
-
-major.minor.patch
-
-- Small bugfixes increase the patchlevel
-- Compatible updates increase the minor level
-- Breaking changes increase the major level
 
 
 ## Data Model
@@ -25,6 +16,7 @@ To understand the data structure of timeBuzzer, we take a look at the Desktop Ap
 
 ### Tiles
 Tiles are objects like “Project A”, “Customer B”, “Cost center C” or similar.
+
 
 ### Layers
 Tiles are organized in Layers. For instance, all customer tiles are related to the same Layer called “Customer”. You can create 1, 2 or 3 Layers and give the Layers a name. This allows you to fit timeBuzzer for the individual needs of a company.
