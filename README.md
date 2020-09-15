@@ -9,6 +9,7 @@ The timeBuzzer website: https://timebuzzer.com
 
 
 
+
 ## Data Model
 
 To understand the data structure of timeBuzzer, we take a look at the Desktop App. You navigate from top to bottom to choose your projects, customers, cost center, tasks etc. you want to track your time on.
@@ -44,4 +45,12 @@ A Tile can also be “global”, what means the Tile will be handled like it wou
 “type”: 2,
 
 Child/Parent–relationships allows you, to combine this Use cases. For instance, you can create Cost-Centers-Tiles that are global and so available to all Project-Tiles, but you can add some Cost-Center-Tiles that are only related to some specific Project-Tiles.
+
+ 	 	
+
+Use case | Layer configuration| Parent/Child- Dependencies 
+--- | --- | --- 
+The company tracks time on customers and projects. Customers have one or more projects. Each project is related to one customer. | Layer 1: “Customers”, Layer 2: “Projects”| Customer-Tile: Parent to n Projects-Tiles, Project-Tile: Child of 1 Customer-Tiles
+The company tracks time on projects and departments. Some departments of the company work on the same projects.| Layer 1: “Projects”, Layer 2: “Department”| Project-Tile: Parent to n Department-Tiles, Department Tiles: Child of n Project-Tiles
+The company tracks time on projects and cost centers. The company uses the same cost center on all projects.| Layer 1: “Projects”, Layer 2: “Cost Centers” | Project-Tiles: no child-Tiles, Cost Center-Tile: is defined as global and so will be shown under all “Project”-Tiles 
 
