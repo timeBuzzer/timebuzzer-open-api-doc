@@ -13,7 +13,7 @@ The timeBuzzer website: https://timebuzzer.com
 
 To understand the data structure of timeBuzzer, we take a look at the Desktop App. You navigate from top to bottom to choose your projects, customers, cost center, tasks etc. you want to track your time on.
 
-![Image of Desktop App](timeBuzzer-datastructure-desktop-app.png)
+![Image of Desktop App](timeBuzzer-datastructure-desktop-app_2022.png)
 
 
 
@@ -38,7 +38,7 @@ The Layers are organized in a Template. Each user is related to one Template. So
 
 In most cases, a company needs only one Template for all users of the company. Example: a company wants to track the working time on projects and tasks, you define a Template with 2 Layers and name the first Layer “Projects” and the second Layer “Tasks”. Every user is related to this Template.
 
-![Image of data model](timeBuzzer_datastructure_model.png)
+![Image of data model](timeBuzzer_datastructure_model_2022.png)
 
 
 ### Dependencies between Tiles
