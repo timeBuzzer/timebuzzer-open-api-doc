@@ -2,11 +2,11 @@
 
 Welcome to the timeBuzzer API Documentation. The timeBuzzer API is a REST API. You can can create items like projects, customers or tasks, you can create and edit time entries and receive new time entries via webhooks.
 
-Here you find the list of all API requests: https://my.timebuzzer.com/doc
+Here you find the list of **all API requests**: https://my.timebuzzer.com/doc
 
-Here you find a the most common requests prepard in Postman: https://www.postman.com/timebuzzer/workspace/open-api/documentation/2798570-5c8228e6-ec5b-4cd2-8341-0f0ad69b229f
+Here you find a the most common requests prepard in **Postman**: https://www.postman.com/timebuzzer/workspace/open-api/documentation/2798570-5c8228e6-ec5b-4cd2-8341-0f0ad69b229f
 
-The timeBuzzer website: https://timebuzzer.com
+The timeBuzzer **website**: https://timebuzzer.com
 
 
 
